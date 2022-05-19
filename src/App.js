@@ -9,8 +9,8 @@ function App() {
     console.log('refParent', refParent.current)
     console.log('refChild', refChild.current)
 
-    refParent.current.style.color = 'tomato'
-    refChild.current.style.color = 'orange'
+    refParent.current && (refParent.current.style.color = "tomato")
+    refChild.current && (refChild.current.style.color = "orange")
   }, [])
 
   return (
