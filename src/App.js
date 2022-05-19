@@ -10,7 +10,7 @@ function App() {
     console.log('refChild', refChild.current)
 
     refParent.current.style.color = 'tomato'
-    refParent.current.style.color = 'orange'
+    refChild.current.style.color = 'orange'
   }, [])
 
   return (
